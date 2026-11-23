@@ -3,7 +3,7 @@
 
 A simple study app to create, flip, and manage flashcards.
 
-**Live Demo:** [Add your Netlify link here]
+   **Live Demo:** https://maryamshuaibumusa706-netizen.github.io/flashcards-app/
 
 ### Features
 - Click to flip cards (question → answer)
