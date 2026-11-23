@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neon Flashcards — Study Smarter</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🧠 Neon Flashcards</h1>
+      <p>Click a card to flip it. Add your own to build your deck.</p>
+    </header>
+
+    <div id="flashcard" role="button" tabindex="0" aria-label="Flashcard, click to flip">
+      <div class="front"></div>
+      <div class="back"></div>
+      <span class="hint">Click to flip</span>
+    </div>
+
+    <div class="controls">
+      <button id="prev-btn">← Prev</button>
+      <span id="counter">1 / 3</span>
+      <button id="next-btn">Next →</button>
+    </div>
+    <button id="delete-btn" class="danger">Delete Current Card</button>
+
+    <form id="entry-form">
+      <h2>Add a New Card</h2>
+      <label for="front-text">Question</label>
+      <textarea id="front-text" placeholder="e.g. What is the capital of France?"></textarea>
+
+      <label for="back-text">Answer</label>
+      <textarea id="back-text" placeholder="e.g. Paris"></textarea>
+
+      <button type="submit">+ Add Card</button>
+      <p id="error-msg" class="error"></p>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
